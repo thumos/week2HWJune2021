@@ -1,0 +1,42 @@
+/* Center the page's content. */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Animate Carousel */
+
+#imageSlider {
+    display: flex;
+    transform: translateX(-000px);
+    animation: anime 50s infinite alternate;
+  }
+  #imageSliderJS {
+    display: flex;
+ }
+  #window {
+    border: 1px solid;
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  img {
+    width: 600px;
+    height: auto;
+  }
+  @keyframes anime {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-3600px);
+    }
+  }
+  button {
+      position: relative;
+      top: -40px;
+  }
